@@ -1,27 +1,93 @@
 export const services = [
   {
     title: "AI Agents & Automation",
-    desc: "Custom AI agents, workflow automation, intelligent assistants, and enterprise AI integrations designed to improve speed, accuracy, and customer experience.",
+    desc: "Enterprise-grade AI agents and workflow automation designed to improve speed, accuracy, and customer experience — with governance and security built in.",
+    bullets: [
+      "Agent design, orchestration, tool integrations, and RAG",
+      "Secure enterprise rollout and access control",
+      "Automation for support, operations, analytics, and knowledge",
+    ],
   },
   {
-    title: "Cybersecurity & Network Security",
-    desc: "End-to-end security architecture, firewall strategy, zero-trust design, vulnerability assessment, threat monitoring, and secure access solutions.",
+    title: "Cybersecurity Strategy & Operations",
+    desc: "Practical security that reduces risk and strengthens resilience across cloud, network, and applications — aligned to business priorities.",
+    bullets: [
+      "Security architecture, hardening, and threat modeling",
+      "Vulnerability assessments and remediation planning",
+      "Monitoring strategy and incident readiness",
+    ],
   },
   {
-    title: "Data Center & Enterprise Networking",
-    desc: "Data center design, routing and switching, secure connectivity, hybrid cloud networking, network modernization, and performance optimization.",
+    title: "Zero-Trust Network Security",
+    desc: "Design and rollout of modern identity-first, segmented network access that improves control without breaking productivity.",
+    bullets: [
+      "Network segmentation and least-privilege access",
+      "Firewall strategy and secure remote access",
+      "Policy design with phased implementation",
+    ],
   },
   {
-    title: "Software Development",
-    desc: "Modern web applications, business systems, backend services, API development, cloud-native platforms, and scalable enterprise software.",
+    title: "Cloud Architecture & Migration",
+    desc: "Cloud and hybrid architecture planning with a focus on reliability, security, cost discipline, and operational readiness.",
+    bullets: [
+      "Cloud landing zones and secure foundations",
+      "Migration planning and modernization",
+      "Backup, DR planning, and resilience testing",
+    ],
   },
   {
-    title: "Software Testing & QA",
-    desc: "Manual testing, automation testing, test strategy, performance validation, regression testing, and quality engineering for reliable software delivery.",
+    title: "DevOps, SRE & Observability",
+    desc: "Reliable deployments and operational visibility that help teams ship faster with confidence and measurable uptime.",
+    bullets: [
+      "CI/CD pipelines and release strategy",
+      "Monitoring, logs, tracing, and alerting design",
+      "SLOs, incident process, and reliability coaching",
+    ],
   },
   {
-    title: "Cloud & Infrastructure Solutions",
-    desc: "Infrastructure planning, cloud migration, secure architecture, observability, resilience, and operational readiness for modern IT environments.",
+    title: "Enterprise Networking & Data Center",
+    desc: "Modern network architecture for scalability and performance across sites, data centers, and hybrid environments.",
+    bullets: [
+      "Routing/switching design and modernization",
+      "Secure connectivity and performance optimization",
+      "Network documentation and operational handoff",
+    ],
+  },
+  {
+    title: "Software Engineering (Web & Backend)",
+    desc: "Modern web applications, backend services, APIs, and cloud-native platforms designed for scale, security, and maintainability.",
+    bullets: [
+      "Frontend + backend engineering and API design",
+      "Scalable system design and performance tuning",
+      "Secure coding practices and architecture reviews",
+    ],
+  },
+  {
+    title: "Software Testing & QA Engineering",
+    desc: "Quality engineering that keeps releases stable through robust testing strategy, automation, and performance validation.",
+    bullets: [
+      "Manual testing and test planning",
+      "Automation frameworks and regression suites",
+      "Performance testing and release readiness",
+    ],
+  },
+  {
+    title: "Identity & Access Management (IAM)",
+    desc: "Identity-first security for users, systems, and services — with strong controls and clear audit trails.",
+    bullets: [
+      "SSO, MFA, and access reviews",
+      "Role design and privileged access controls",
+      "Secure onboarding/offboarding workflows",
+    ],
+  },
+  {
+    title: "Security & Compliance Enablement",
+    desc: "Help organizations align security controls and documentation with compliance expectations, audits, and operational discipline.",
+    bullets: [
+      "Policies, controls mapping, and evidence strategy",
+      "Secure SDLC and change management support",
+      "Risk reviews and security posture reporting",
+    ],
   },
 ];
 

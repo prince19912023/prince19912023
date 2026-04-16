@@ -1,4 +1,10 @@
-export default function PageHero({ title, subtitle, imageSrc, imageAlt }) {
+export default function PageHero({
+  title,
+  subtitle,
+  imageSrc,
+  imageAlt,
+  badgeText = "AI Agents • Cybersecurity • Cloud • DevOps • Networking • Software • QA",
+}) {
   return (
     <section className="relative overflow-hidden border-b border-white/10">
       <div className="absolute inset-0">
@@ -22,7 +28,7 @@ export default function PageHero({ title, subtitle, imageSrc, imageAlt }) {
       <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-24">
         <div className="max-w-3xl">
           <div className="inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm text-cyan-200">
-            AI • Cybersecurity • Networking • Software Engineering
+            {badgeText}
           </div>
           <h1 className="mt-5 text-3xl font-bold leading-tight md:text-5xl">
             {title}

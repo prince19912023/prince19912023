@@ -27,7 +27,7 @@ export default function Services() {
     <>
       <PageHero
         title="Services built for security, intelligence, and performance"
-        subtitle="Strategic consulting and hands-on engineering for AI agents, cybersecurity, enterprise networking, cloud infrastructure, and software delivery."
+        subtitle="Strategic consulting and hands-on engineering across AI agents, cybersecurity, cloud architecture, DevOps/SRE, enterprise networking, software engineering, and QA."
         imageSrc="https://images.unsplash.com/photo-1581091870627-3af5f02aeb6a?auto=format&fit=crop&w=2000&q=80"
         imageAlt="Engineers working with high-tech systems"
       />
@@ -56,6 +56,67 @@ export default function Services() {
                 Enterprise-grade security posture, AI-ready architecture, and
                 reliable engineering practices that scale.
               </div>
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                {[
+                  "Security controls and auditability",
+                  "Clear architecture + rollout plan",
+                  "Testing strategy + release readiness",
+                  "Operational handoff + monitoring",
+                ].map((x) => (
+                  <div
+                    key={x}
+                    className="rounded-2xl border border-white/10 bg-slate-950/40 p-4 text-sm text-slate-200"
+                  >
+                    {x}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-6 rounded-[28px] border border-white/10 bg-slate-950/40 p-6">
+              <div className="text-sm font-medium uppercase tracking-[0.2em] text-cyan-300">
+                Engagement options
+              </div>
+              <div className="mt-3 text-2xl font-bold">
+                Choose the delivery model that fits
+              </div>
+              <p className="mt-4 leading-7 text-slate-300">
+                We support short discovery engagements, delivery sprints, and
+                longer programs. Each model includes clear deliverables,
+                documentation, and an operational handoff plan.
+              </p>
+              <div className="mt-6 grid gap-4 md:grid-cols-2">
+                {[
+                  {
+                    title: "Discovery sprint",
+                    desc: "Architecture + scope + risks + delivery plan in a short engagement.",
+                  },
+                  {
+                    title: "Delivery sprints",
+                    desc: "Focused implementation milestones with testing and rollout readiness.",
+                  },
+                  {
+                    title: "Program delivery",
+                    desc: "End-to-end execution with clear phases and operational handoff.",
+                  },
+                  {
+                    title: "Advisory + review",
+                    desc: "Security/architecture reviews with prioritized recommendations.",
+                  },
+                ].map((x) => (
+                  <div
+                    key={x.title}
+                    className="rounded-2xl border border-white/10 bg-white/5 p-4"
+                  >
+                    <div className="text-sm font-semibold text-slate-100">
+                      {x.title}
+                    </div>
+                    <div className="mt-2 text-sm leading-6 text-slate-300">
+                      {x.desc}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -64,19 +125,106 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-12 mb-6 max-w-3xl">
+          <div className="text-sm font-medium uppercase tracking-[0.2em] text-cyan-300">
+            Service catalog
+          </div>
+          <h2 className="mt-3 text-2xl font-bold md:text-3xl">
+            Built for modern enterprise needs
+          </h2>
+          <p className="mt-4 leading-7 text-slate-300">
+            We design solutions that are secure, scalable, and operationally
+            sound — with testing and monitoring readiness integrated early.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service) => (
             <div
               key={service.title}
               className="group rounded-[24px] border border-white/10 bg-white/5 p-6 shadow-lg shadow-slate-950/30 transition hover:-translate-y-1 hover:border-cyan-400/30"
             >
-              <div className="mb-4 h-10 w-10 rounded-xl bg-cyan-400/15 ring-1 ring-cyan-400/30 transition group-hover:bg-cyan-400/20" />
+              <div className="mb-4 flex items-center justify-between gap-4">
+                <div className="h-10 w-10 rounded-xl bg-cyan-400/15 ring-1 ring-cyan-400/30 transition group-hover:bg-cyan-400/20" />
+                <span className="rounded-full border border-white/10 bg-slate-950/40 px-3 py-1 text-xs text-slate-200">
+                  Enterprise
+                </span>
+              </div>
               <h2 className="text-xl font-semibold">{service.title}</h2>
               <p className="mt-3 text-sm leading-7 text-slate-300">
                 {service.desc}
               </p>
+              {service.bullets?.length ? (
+                <ul className="mt-4 space-y-2 text-sm text-slate-300">
+                  {service.bullets.map((b) => (
+                    <li key={b} className="flex gap-3">
+                      <span className="mt-2 h-2 w-2 rounded-full bg-cyan-300" />
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 grid gap-6 lg:grid-cols-3">
+          <div className="rounded-[28px] border border-white/10 bg-white/5 p-8 lg:col-span-2">
+            <div className="text-sm font-medium uppercase tracking-[0.2em] text-cyan-300">
+              What you get
+            </div>
+            <div className="mt-3 text-2xl font-bold md:text-3xl">
+              Deliverables that teams can run in production
+            </div>
+            <p className="mt-4 leading-7 text-slate-300">
+              Our work includes the technical delivery plus the operational
+              clarity required to keep systems stable: documentation, testing
+              plans, and monitoring readiness.
+            </p>
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
+              {[
+                "Architecture diagrams and system boundaries",
+                "Security controls, access model, and hardening plan",
+                "Testing strategy + automation approach",
+                "Monitoring/alerting plan and operational playbooks",
+                "Rollout plan with milestones and success metrics",
+                "Documentation + handoff for internal teams",
+              ].map((x) => (
+                <div
+                  key={x}
+                  className="rounded-2xl border border-white/10 bg-slate-950/40 p-4 text-sm text-slate-200"
+                >
+                  {x}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="rounded-[28px] border border-white/10 bg-slate-950/40 p-8">
+            <div className="text-sm font-medium uppercase tracking-[0.2em] text-cyan-300">
+              Quality
+            </div>
+            <div className="mt-3 text-xl font-bold">Testing built in</div>
+            <p className="mt-4 leading-7 text-slate-300">
+              We prioritize release readiness through QA strategy, automation,
+              performance checks, and operational monitoring.
+            </p>
+            <div className="mt-6 space-y-3">
+              {[
+                "Regression protection for critical flows",
+                "Performance validation where it matters",
+                "Clear rollback and incident readiness",
+                "Documentation and ownership clarity",
+              ].map((x) => (
+                <div
+                  key={x}
+                  className="rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-slate-200"
+                >
+                  {x}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className="mb-6 flex items-end justify-between gap-6">

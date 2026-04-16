@@ -16,7 +16,7 @@ export default function Navbar() {
             Prime Axis North America Limited
           </div>
           <div className="text-xs text-slate-300">
-            AI • Cybersecurity • Networking • Software Engineering
+            AI Agents • Cybersecurity • Cloud • DevOps • Networking • Software • QA
           </div>
         </div>
 

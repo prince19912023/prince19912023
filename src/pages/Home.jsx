@@ -3,7 +3,7 @@ import PageHero from "../components/PageHero.jsx";
 import AiHeroVisual from "../components/AiHeroVisual.jsx";
 import AiCircuitSvg from "../components/AiCircuitSvg.jsx";
 import PhotoCard from "../components/PhotoCard.jsx";
-import { highlights } from "../data/siteData.js";
+import { highlights, services } from "../data/siteData.js";
 
 export default function Home() {
   const photos = [
@@ -81,6 +81,66 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 pb-10 md:pb-14">
+        <div className="grid gap-8 rounded-[28px] border border-white/10 bg-white/5 p-8 lg:grid-cols-2 lg:items-center">
+          <div className="order-2 lg:order-1">
+            <div className="text-sm font-medium uppercase tracking-[0.2em] text-cyan-300">
+              What we deliver
+            </div>
+            <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+              Secure AI, resilient infrastructure, and reliable engineering
+            </h2>
+            <p className="mt-4 leading-7 text-slate-300">
+              Prime Axis North America Limited is built for organizations that
+              need measurable outcomes. We combine AI enablement with
+              cybersecurity discipline, modern cloud architecture, and delivery
+              practices that keep quality high.
+            </p>
+            <p className="mt-4 leading-7 text-slate-300">
+              From architecture and implementation to testing, monitoring, and
+              operational handoff, we help teams ship confidently in complex
+              enterprise environments.
+            </p>
+
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              {services.slice(0, 6).map((s) => (
+                <div
+                  key={s.title}
+                  className="rounded-2xl border border-white/10 bg-slate-950/40 p-4"
+                >
+                  <div className="text-sm font-semibold text-slate-100">
+                    {s.title}
+                  </div>
+                  <div className="mt-2 text-sm leading-6 text-slate-300">
+                    {s.bullets?.[0] ?? s.desc}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="order-1 lg:order-2">
+            <div className="group overflow-hidden rounded-[28px] border border-white/10 bg-slate-950/40 shadow-2xl shadow-cyan-500/10">
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=2000&q=80"
+                  alt="AI and modern engineering workspace"
+                  loading="lazy"
+                  className="h-full w-full object-cover opacity-90 transition duration-700 group-hover:scale-[1.02]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/25 to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4 rounded-2xl border border-white/10 bg-slate-950/60 p-4 backdrop-blur">
+                  <div className="text-sm text-cyan-200">Enterprise outcomes</div>
+                  <div className="mt-1 text-slate-100">
+                    AI-ready architecture + security-by-design + dependable delivery.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 pb-10 md:pb-14">
         <div className="mb-8 flex items-end justify-between gap-6">
           <div className="max-w-3xl">
             <div className="text-sm font-medium uppercase tracking-[0.2em] text-cyan-300">
@@ -124,6 +184,21 @@ export default function Home() {
               We bring together AI agents, cybersecurity hardening, enterprise
               networking, and software engineering to deliver reliable outcomes.
             </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              {[
+                "Clear architecture and delivery plan",
+                "Security controls integrated early",
+                "Testing strategy and release readiness",
+                "Operational handoff with observability",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-2xl border border-white/10 bg-slate-950/40 p-4 text-sm text-slate-200"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
           </div>
           <div className="flex items-end justify-start md:justify-end">
             <Link
