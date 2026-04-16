@@ -1,8 +1,27 @@
 import { Link } from "react-router-dom";
 import AiCircuitSvg from "../components/AiCircuitSvg.jsx";
+import PhotoCard from "../components/PhotoCard.jsx";
 import { services } from "../data/siteData.js";
 
 export default function Services() {
+  const photos = [
+    {
+      label: "AI Engineering",
+      alt: "Person working with AI and analytics dashboards",
+      src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80",
+    },
+    {
+      label: "Network & Data Center",
+      alt: "Network switches and cables in a data center",
+      src: "https://images.unsplash.com/photo-1562813733-b31f71025d54?auto=format&fit=crop&w=1600&q=80",
+    },
+    {
+      label: "Security Operations",
+      alt: "Cybersecurity concept with code and locks",
+      src: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=80",
+    },
+  ];
+
   return (
     <section className="relative mx-auto max-w-7xl px-6 py-16 md:py-24">
       <div className="absolute inset-x-0 top-0 -z-10 mx-auto max-w-7xl px-6">
@@ -61,6 +80,36 @@ export default function Services() {
             </p>
           </div>
         ))}
+      </div>
+
+      <div className="mt-12">
+        <div className="mb-6 flex items-end justify-between gap-6">
+          <div className="max-w-3xl">
+            <div className="text-sm font-medium uppercase tracking-[0.2em] text-cyan-300">
+              Visual snapshot
+            </div>
+            <h2 className="mt-3 text-2xl font-bold md:text-3xl">
+              Delivery across AI, security, and infrastructure
+            </h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              Modern tooling, enterprise standards, and measurable outcomes.
+            </p>
+          </div>
+          <div className="hidden md:block">
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center rounded-2xl border border-white/15 px-5 py-3 font-medium text-white transition hover:bg-white/5"
+            >
+              Talk to us
+            </Link>
+          </div>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          {photos.map((p) => (
+            <PhotoCard key={p.label} src={p.src} alt={p.alt} label={p.label} />
+          ))}
+        </div>
       </div>
     </section>
   );
