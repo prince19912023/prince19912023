@@ -46,33 +46,51 @@ export default function Contact() {
               </div>
 
               <div>
-                <div className="text-sm text-slate-400">Phone</div>
-                <div className="space-y-1 font-medium">
-                  {contact.phones.map((p) => (
-                    <a
-                      key={p}
-                      className="block hover:text-cyan-300"
-                      href={`tel:${normalizePhoneForTel(p)}`}
-                    >
-                      {p}
-                    </a>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <div className="text-sm text-slate-400">Addresses</div>
-                <div className="space-y-1 font-medium">
-                  {contact.addresses.map((a) => (
-                    <div key={a}>{a}</div>
-                  ))}
-                </div>
-              </div>
-
-              <div>
                 <div className="text-sm text-slate-400">Service Regions</div>
                 <div className="font-medium">{contact.regions}</div>
               </div>
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <div className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-cyan-300">
+              Locations
+            </div>
+            <div className="grid gap-6">
+              {contact.offices.map((office) => (
+                <div
+                  key={`${office.type}-${office.city}`}
+                  className="rounded-[24px] border border-white/10 bg-white/5 p-6 shadow-lg shadow-slate-950/30"
+                >
+                  <div className="flex items-start justify-between gap-6">
+                    <div>
+                      <div className="text-sm text-slate-400">
+                        {office.type}
+                      </div>
+                      <div className="mt-1 text-xl font-semibold">
+                        {office.city}
+                      </div>
+                    </div>
+                    <div className="h-12 w-12 rounded-2xl bg-cyan-400/15 ring-1 ring-cyan-400/30" />
+                  </div>
+
+                  <div className="mt-4 grid gap-3 text-slate-200">
+                    <div>
+                      <div className="text-sm text-slate-400">Address</div>
+                      <div className="font-medium">{office.address}</div>
+                    </div>
+                    <div>
+                      <div className="text-sm text-slate-400">Phone</div>
+                      <a
+                        className="font-medium hover:text-cyan-300"
+                        href={`tel:${normalizePhoneForTel(office.phone)}`}
+                      >
+                        {office.phone}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

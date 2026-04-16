@@ -48,11 +48,25 @@ export const founders = [
 export const contact = {
   company: "Prime Axis North America Limited",
   email: "info@primeaxisnorthamerica.com",
-  phones: ["+1236-591-5544", "+1-778-697-3921", "+1-425-470-9513"],
-  addresses: [
-    "205-1730 Pendrell St. Vancouver V6G 3A3",
-    "1425 3rd Ave Trail BC V1R 1P5",
-    "610-250 King Street San Francisco 94107",
+  offices: [
+    {
+      type: "Head Office",
+      city: "San Francisco, California",
+      address: "610-250 King Street, San Francisco, California, 94107",
+      phone: "+1-425-470-9513",
+    },
+    {
+      type: "Branch",
+      city: "Vancouver",
+      address: "205-1730 Pendle Street, Vancouver, V6G 383",
+      phone: "+1-236-591-5544",
+    },
+    {
+      type: "Branch",
+      city: "Trail, BC",
+      address: "1425 3rd Avenue Trail, BC, V1R 1P5",
+      phone: "+1-778-697-3921",
+    },
   ],
   regions: "Canada • United States • North America",
 };
