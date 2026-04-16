@@ -2,3 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  color-scheme: dark;
+}
+
+@keyframes float-slow {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -18px, 0) scale(1.02);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  50% {
+    transform: translate3d(10px, 10px, 0);
+  }
+  100% {
+    transform: translate3d(-10px, 0, 0);
+  }
+}
+
+.ai-float {
+  animation: float-slow 9s ease-in-out infinite;
+}
+
+.ai-drift {
+  animation: drift 12s ease-in-out infinite;
+}
+

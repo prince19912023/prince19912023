@@ -1,0 +1,41 @@
+import { NavLink } from "react-router-dom";
+
+const baseLink =
+  "rounded-xl px-3 py-2 text-sm transition hover:bg-white/5 hover:text-cyan-300";
+
+function linkClassName({ isActive }) {
+  return `${baseLink} ${isActive ? "bg-white/5 text-cyan-200" : "text-slate-100"}`;
+}
+
+export default function Navbar() {
+  return (
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <div>
+          <div className="text-xl font-bold tracking-wide">
+            Prime Axis North America Limited
+          </div>
+          <div className="text-xs text-slate-300">
+            AI • Cybersecurity • Networking • Software Engineering
+          </div>
+        </div>
+
+        <nav className="hidden items-center gap-1 md:flex">
+          <NavLink to="/" className={linkClassName} end>
+            Home
+          </NavLink>
+          <NavLink to="/services" className={linkClassName}>
+            Services
+          </NavLink>
+          <NavLink to="/founders" className={linkClassName}>
+            Founders
+          </NavLink>
+          <NavLink to="/contact" className={linkClassName}>
+            Contact
+          </NavLink>
+        </nav>
+      </div>
+    </header>
+  );
+}
+
