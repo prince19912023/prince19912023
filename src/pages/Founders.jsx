@@ -49,9 +49,20 @@ export default function Founders() {
                 <div className="text-sm text-slate-400">{f.role}</div>
                 <h2 className="mt-1 text-2xl font-semibold">{f.name}</h2>
               </div>
-              <div className="h-12 w-12 rounded-2xl bg-cyan-400/15 ring-1 ring-cyan-400/30" />
+              {f.photo ? (
+                <img
+                  src={f.photo}
+                  alt={`${f.name} portrait`}
+                  className="h-14 w-14 rounded-2xl object-cover ring-1 ring-white/10"
+                  loading="lazy"
+                />
+              ) : (
+                <div className="h-12 w-12 rounded-2xl bg-cyan-400/15 ring-1 ring-cyan-400/30" />
+              )}
             </div>
-            <p className="mt-4 leading-7 text-slate-300">{f.bio}</p>
+            <p className="mt-4 whitespace-pre-line leading-7 text-slate-300">
+              {f.bio}
+            </p>
           </div>
         ))}
       </div>

@@ -36,7 +36,8 @@ export const founders = [
   {
     role: "Founder",
     name: "Prince Mangla",
-    bio: "Focused on AI-driven automation, cybersecurity strategy, and enterprise technology delivery across North America.",
+    bio: "Prince Mangla is a cybersecurity and infrastructure specialist with a Master’s degree in Cybersecurity from the New York Institute of Technology. With a strong foundation in network security, AI-driven systems, and enterprise infrastructure, he brings a practical, innovation-focused approach to modern IT challenges.\n\nHe has contributed to high-impact enterprise environments, including assignments with leading global organizations such as Google and Microsoft, where he worked on advanced security frameworks, network architecture, and scalable system design. His experience spans cybersecurity operations, intelligent network systems, and AI-powered deployments, enabling organizations to build secure, resilient, and future-ready infrastructures.\n\nPrince specializes in bridging traditional networking with next-generation AI technologies—designing solutions that are not only secure and efficient but also adaptive to evolving digital threats. His vision is to deliver cutting-edge IT and cybersecurity solutions that empower businesses to operate with confidence in an increasingly complex digital landscape.",
+    photo: "/founders/prince-mangla.png",
   },
   {
     role: "Co-Founder",
