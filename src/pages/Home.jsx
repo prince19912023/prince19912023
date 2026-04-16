@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PageHero from "../components/PageHero.jsx";
 import AiHeroVisual from "../components/AiHeroVisual.jsx";
 import AiCircuitSvg from "../components/AiCircuitSvg.jsx";
 import PhotoCard from "../components/PhotoCard.jsx";
@@ -25,23 +26,19 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,211,238,0.18),transparent_30%),radial-gradient(circle_at_left,rgba(59,130,246,0.12),transparent_25%)]" />
-        <div className="pointer-events-none absolute inset-x-0 top-24 mx-auto max-w-7xl px-6">
-          <div className="relative">
-            <div className="absolute -left-24 -top-20 h-80 w-80 rounded-full bg-cyan-500/10 blur-3xl ai-drift" />
-            <div className="absolute -right-24 -top-10 h-80 w-80 rounded-full bg-blue-500/10 blur-3xl ai-float" />
-          </div>
-        </div>
+      <PageHero
+        title="AI-led IT solutions for modern businesses across North America"
+        subtitle="Modernize infrastructure, strengthen cybersecurity, deploy AI agents, build reliable software, and scale enterprise networks with confidence."
+        imageSrc="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=2000&q=80"
+        imageAlt="AI-generated imagery on a futuristic screen"
+      />
 
-        <div className="relative mx-auto grid max-w-7xl gap-10 px-6 py-20 md:grid-cols-2 md:py-28">
+      <section className="mx-auto max-w-7xl px-6 py-12 md:py-16">
+        <div className="grid gap-10 md:grid-cols-2 md:items-start">
           <div className="space-y-6">
             <div className="inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm text-cyan-200">
               Building secure, intelligent digital systems
             </div>
-            <h1 className="text-4xl font-bold leading-tight md:text-6xl">
-              AI-led IT solutions for modern businesses across North America
-            </h1>
             <p className="max-w-2xl text-base leading-7 text-slate-300 md:text-lg">
               Prime Axis North America Limited helps organizations modernize
               infrastructure, strengthen cybersecurity, deploy AI agents, build
@@ -62,7 +59,7 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="grid gap-3 pt-4 sm:grid-cols-2">
+            <div className="grid gap-3 pt-2 sm:grid-cols-2">
               {highlights.map((item) => (
                 <div
                   key={item}
@@ -74,12 +71,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex items-center">
-            <div className="w-full space-y-6">
-              <AiHeroVisual />
-              <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/5 shadow-2xl shadow-blue-500/10">
-                <AiCircuitSvg className="h-auto w-full opacity-95" />
-              </div>
+          <div className="space-y-6">
+            <AiHeroVisual />
+            <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/5 shadow-2xl shadow-blue-500/10">
+              <AiCircuitSvg className="h-auto w-full opacity-95" />
             </div>
           </div>
         </div>

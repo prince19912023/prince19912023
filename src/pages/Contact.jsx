@@ -1,4 +1,5 @@
 import { contact } from "../data/siteData.js";
+import PageHero from "../components/PageHero.jsx";
 
 function normalizePhoneForTel(phone) {
   return phone.replace(/[^\d+]/g, "");
@@ -6,15 +7,16 @@ function normalizePhoneForTel(phone) {
 
 export default function Contact() {
   return (
-    <section className="relative mx-auto max-w-7xl px-6 py-16 md:py-24">
-      <div className="absolute inset-x-0 top-0 -z-10 mx-auto max-w-7xl px-6">
-        <div className="relative">
-          <div className="absolute -left-20 -top-12 h-72 w-72 rounded-full bg-cyan-500/10 blur-3xl ai-drift" />
-          <div className="absolute -right-20 -top-10 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl ai-float" />
-        </div>
-      </div>
+    <>
+      <PageHero
+        title="Contact Prime Axis"
+        subtitle="Reach our head office or one of our branches across North America."
+        imageSrc="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=2000&q=80"
+        imageAlt="Modern laptop and AI-themed workspace"
+      />
 
-      <div className="grid gap-8 md:grid-cols-2">
+      <section className="relative mx-auto max-w-7xl px-6 py-16 md:py-20">
+        <div className="grid gap-8 md:grid-cols-2">
         <div>
           <div className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-cyan-300">
             Contact
@@ -131,8 +133,9 @@ export default function Contact() {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   );
 }
 
