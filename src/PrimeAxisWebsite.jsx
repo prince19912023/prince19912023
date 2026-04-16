@@ -52,6 +52,9 @@ export default function PrimeAxisWebsite() {
             <a href="#about" className="hover:text-cyan-300">
               About
             </a>
+            <a href="#founders" className="hover:text-cyan-300">
+              Founders
+            </a>
             <a href="#why-us" className="hover:text-cyan-300">
               Why Us
             </a>
@@ -203,6 +206,40 @@ export default function PrimeAxisWebsite() {
         </div>
       </section>
 
+      <section id="founders" className="mx-auto max-w-7xl px-6 py-16 md:py-24">
+        <div className="mb-10 max-w-3xl">
+          <div className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-cyan-300">
+            Founders
+          </div>
+          <h2 className="text-3xl font-bold md:text-4xl">
+            Leadership behind Prime Axis
+          </h2>
+          <p className="mt-4 text-slate-300 leading-7">
+            Prime Axis North America Limited is led by founders focused on
+            building secure, high-quality, and future-ready technology services.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          <div className="rounded-[24px] border border-white/10 bg-white/5 p-6">
+            <div className="text-sm text-slate-400">Founder</div>
+            <h3 className="mt-1 text-2xl font-semibold">Prince Mangla</h3>
+            <p className="mt-4 leading-7 text-slate-300">
+              Focused on AI-driven automation, cybersecurity strategy, and
+              enterprise technology delivery across North America.
+            </p>
+          </div>
+          <div className="rounded-[24px] border border-white/10 bg-white/5 p-6">
+            <div className="text-sm text-slate-400">Co-Founder</div>
+            <h3 className="mt-1 text-2xl font-semibold">Pooja Mangla</h3>
+            <p className="mt-4 leading-7 text-slate-300">
+              Focused on operations, client success, and ensuring reliable,
+              high-quality execution across service engagements.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="why-us" className="mx-auto max-w-7xl px-6 py-16 md:py-24">
         <div className="mb-10 max-w-3xl">
           <div className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-cyan-300">
@@ -271,12 +308,37 @@ export default function PrimeAxisWebsite() {
                   </div>
                 </div>
                 <div>
+                  <div className="text-sm text-slate-400">Address</div>
+                  <div className="font-medium">
+                    205-1730 Pendrell St. Vancouver V6G 3A3
+                    <br />
+                    1425 3rd Ave Trail BC V1R 1P5
+                    <br />
+                    610-250 King Street San Francisco 94107
+                  </div>
+                </div>
+                <div>
                   <div className="text-sm text-slate-400">Email</div>
-                  <div className="font-medium">info@yourdomain.com</div>
+                  <a
+                    className="font-medium hover:text-cyan-300"
+                    href="mailto:info@primeaxisnorthamerica.com"
+                  >
+                    info@primeaxisnorthamerica.com
+                  </a>
                 </div>
                 <div>
                   <div className="text-sm text-slate-400">Phone</div>
-                  <div className="font-medium">+1 (000) 000-0000</div>
+                  <div className="space-y-1 font-medium">
+                    <a className="block hover:text-cyan-300" href="tel:+12365915544">
+                      +1236-591-5544
+                    </a>
+                    <a className="block hover:text-cyan-300" href="tel:+17786973921">
+                      +1-778-697-3921
+                    </a>
+                    <a className="block hover:text-cyan-300" href="tel:+14254709513">
+                      +1-425-470-9513
+                    </a>
+                  </div>
                 </div>
                 <div>
                   <div className="text-sm text-slate-400">Service Regions</div>
