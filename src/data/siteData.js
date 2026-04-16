@@ -42,7 +42,8 @@ export const founders = [
   {
     role: "Co-Founder",
     name: "Pooja Mangla",
-    bio: "Focused on operations, client success, and ensuring reliable, high-quality execution across service engagements.",
+    bio: "Pooja Mangla is a Co-Founder and a distinguished Senior Software Scientist currently working at Amazon, where she plays a key role in large-scale system deployments and cutting-edge technology innovation. Based in San Francisco, she is deeply involved in advancing next-generation AI-driven solutions and building scalable, high-performance systems.\n\nWith a strong background in software engineering and research, Pooja brings experience from leading global organizations including Adobe and Juniper Networks. Throughout her career, she has contributed to the design and development of complex systems, networking protocols, and infrastructure solutions, with several research-driven innovations and patented technologies to her name.\n\nHer expertise spans distributed systems, networking, artificial intelligence, and infrastructure design, where she combines deep technical knowledge with a forward-thinking approach. At Amazon, she continues to lead impactful initiatives, driving innovation in AI technologies and deployment architectures that power modern digital ecosystems.\n\nAs a co-founder, Pooja brings a rare blend of research excellence, industry experience, and visionary leadership, shaping the organization’s technological direction and pushing the boundaries of innovation.",
+    photo: "/founders/pooja-mangla.png",
   },
 ];
 

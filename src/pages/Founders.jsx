@@ -44,25 +44,26 @@ export default function Founders() {
             key={f.name}
             className="rounded-[24px] border border-white/10 bg-white/5 p-6 shadow-lg shadow-slate-950/30"
           >
-            <div className="flex items-start justify-between gap-6">
-              <div>
-                <div className="text-sm text-slate-400">{f.role}</div>
-                <h2 className="mt-1 text-2xl font-semibold">{f.name}</h2>
-              </div>
+            <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
               {f.photo ? (
                 <img
                   src={f.photo}
                   alt={`${f.name} portrait`}
-                  className="h-14 w-14 rounded-2xl object-cover ring-1 ring-white/10"
+                  className="h-32 w-32 rounded-[22px] object-cover ring-1 ring-white/10 sm:h-36 sm:w-36"
                   loading="lazy"
                 />
               ) : (
-                <div className="h-12 w-12 rounded-2xl bg-cyan-400/15 ring-1 ring-cyan-400/30" />
+                <div className="h-32 w-32 rounded-[22px] bg-cyan-400/15 ring-1 ring-cyan-400/30 sm:h-36 sm:w-36" />
               )}
+
+              <div className="min-w-0">
+                <div className="text-sm text-slate-400">{f.role}</div>
+                <h2 className="mt-1 text-2xl font-semibold">{f.name}</h2>
+                <p className="mt-4 whitespace-pre-line leading-7 text-slate-300">
+                  {f.bio}
+                </p>
+              </div>
             </div>
-            <p className="mt-4 whitespace-pre-line leading-7 text-slate-300">
-              {f.bio}
-            </p>
           </div>
         ))}
       </div>
