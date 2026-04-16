@@ -20,15 +20,30 @@ export default function Navbar() {
           </div>
         </div>
 
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden max-w-[760px] flex-wrap justify-end gap-1 md:flex">
           <NavLink to="/" className={linkClassName} end>
             Home
+          </NavLink>
+          <NavLink to="/about" className={linkClassName}>
+            About
           </NavLink>
           <NavLink to="/services" className={linkClassName}>
             Services
           </NavLink>
+          <NavLink to="/industries" className={linkClassName}>
+            Industries
+          </NavLink>
+          <NavLink to="/case-studies" className={linkClassName}>
+            Case Studies
+          </NavLink>
           <NavLink to="/founders" className={linkClassName}>
             Founders
+          </NavLink>
+          <NavLink to="/blog" className={linkClassName}>
+            Blog
+          </NavLink>
+          <NavLink to="/careers" className={linkClassName}>
+            Careers
           </NavLink>
           <NavLink to="/contact" className={linkClassName}>
             Contact
