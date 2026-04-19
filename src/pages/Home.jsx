@@ -59,6 +59,28 @@ export default function Home() {
               </Link>
             </div>
 
+            <div className="group relative mt-4 overflow-hidden rounded-[24px] border border-cyan-400/20 bg-slate-900/60 shadow-2xl shadow-cyan-500/15 ring-1 ring-white/10">
+              <div className="relative aspect-[16/10] w-full overflow-hidden sm:aspect-[21/9]">
+                <img
+                  src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=1800&q=85"
+                  alt="Abstract AI neural network and digital intelligence visualization"
+                  loading="lazy"
+                  className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(34,211,238,0.25),transparent_50%)]" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5">
+                  <div className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">
+                    Artificial intelligence
+                  </div>
+                  <p className="mt-1 max-w-xl text-sm font-medium leading-relaxed text-white sm:text-base">
+                    Enterprise AI, automation, and intelligent systems—designed
+                    for security, scale, and real business outcomes.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div className="grid gap-3 pt-2 sm:grid-cols-2">
               {highlights.map((item) => (
                 <div
