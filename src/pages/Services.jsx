@@ -120,8 +120,32 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/5 shadow-2xl shadow-cyan-500/10">
-            <AiCircuitSvg className="h-auto w-full opacity-95" />
+          <div className="space-y-6">
+            <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/5 shadow-2xl shadow-cyan-500/10">
+              <AiCircuitSvg className="h-auto w-full opacity-95" />
+            </div>
+
+            <div className="group relative overflow-hidden rounded-[28px] border border-cyan-400/15 bg-slate-900/50 shadow-2xl shadow-cyan-500/10 ring-1 ring-white/10">
+              <div className="relative aspect-[16/10] w-full overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1617791160505-6f00604ccc35?auto=format&fit=crop&w=1600&q=85"
+                  alt="Advanced semiconductor and microelectronics manufacturing"
+                  loading="lazy"
+                  className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-slate-950/20" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(34,211,238,0.2),transparent_55%)]" />
+                <div className="absolute bottom-0 left-0 right-0 p-5">
+                  <div className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">
+                    Semiconductors & silicon
+                  </div>
+                  <p className="mt-1 max-w-lg text-sm font-medium leading-relaxed text-white sm:text-base">
+                    From advanced packaging to high-performance compute—hardware
+                    innovation that powers AI, cloud, and next-generation networks.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
