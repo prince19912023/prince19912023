@@ -19,7 +19,7 @@ export default function Founders() {
               to="/contact"
               className="rounded-2xl bg-cyan-400 px-5 py-3 font-medium text-slate-950 shadow-lg shadow-cyan-500/20 transition hover:scale-[1.02]"
             >
-              Contact the Team
+              Connect with leadership
             </Link>
             <Link
               to="/services"
