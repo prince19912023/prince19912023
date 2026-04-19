@@ -91,6 +91,27 @@ export default function Home() {
                 </div>
               ))}
             </div>
+
+            <div className="group relative overflow-hidden rounded-[24px] border border-white/10 bg-slate-900/50 shadow-xl shadow-blue-500/10 ring-1 ring-cyan-400/10">
+              <div className="relative aspect-[4/3] w-full overflow-hidden sm:aspect-[16/10]">
+                <img
+                  src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1600&q=85"
+                  alt="Innovative enterprise data center with server racks and network infrastructure"
+                  loading="lazy"
+                  className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/35 to-transparent" />
+                <div className="absolute inset-y-0 left-0 flex max-w-[85%] flex-col justify-end p-4 sm:max-w-[75%] sm:p-5">
+                  <div className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">
+                    Data center & infrastructure
+                  </div>
+                  <p className="mt-1 text-sm font-medium leading-relaxed text-white sm:text-base">
+                    Modern colocation, cloud edge, and high-density compute—built
+                    for resilience, security, and scale.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="space-y-6">
